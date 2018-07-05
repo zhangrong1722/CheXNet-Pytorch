@@ -6,7 +6,7 @@ This is a binary classification(Pneumonia vs Normal) in Xray14 with Pytorch.Dens
 
 The [ChestX-ray14 dataset](http://openaccess.thecvf.com/content_cvpr_2017/papers/Wang_ChestX-ray8_Hospital-Scale_Chest_CVPR_2017_paper.pdf) comprises 112,120 frontal-view chest X-ray images of 30,805 unique patients with 14 disease labels.I firstly extracted all normal images and imags with pneumonia,whose numbers are 1353 and 604,12 respectively.Then these images(original size is `1024*1024`) are resized into `256*256 ` and finally I randomly split the dataset into training(`80%`),validataion(`20%`) sets.Obviously,the baises will seriously inclined to to the class with a larger number if neural network is trained roughly with raw dataset because a severely class-imbalance exists.To go further,neural network just guess all inputs as the normal and can perform a "high" accuracy(`~97.81%`).That's the result we don't want to see that because a terrible overfitting occures,which means such a classifier is meaningless.Data augumentation is an effective method to tackle such problems.
 
-## Data augumentation$^{1}$
+## Data augumentation
 
 In this project,data augumentation that is conducted for images with pneumonia is neccessary and makes great sense.The used transforms are as follows:
 
@@ -79,7 +79,7 @@ Any question,please contact with me.Email(giovannijeann@outlook.com) and WeChat(
 
 -------
 
-1.For PyTorch,there is another method called oversampling to keep class balance.However,it doesn't work in this project.You can look up the  [python script](https://github.com/estelle1722/CheXNet-Pytorch/blob/master/utils/sampler.py).
+1.For PyTorch,beside data augumentation there is another useful method called `oversampling` to keep class balance.However,it doesn't work in this project.You can look up the  [python script](https://github.com/estelle1722/CheXNet-Pytorch/blob/master/utils/sampler.py).
 
 
 
