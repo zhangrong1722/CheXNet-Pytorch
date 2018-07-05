@@ -52,7 +52,7 @@ The runtime environment is shown in the following table:
 | :-------------------: | :-------------------: | :-----------------: |
 |         Model         |      Densenet121      |          -          |
 |       Optimizer       |         Adam          |          -          |
-| Initial learning rate |         0.001         | decay 0.1/30 epochs |
+| Initial learning rate |         0.001         | decay 0.1/40 epochs |
 |         GPUs          | 2*GeForce GTX 1080 Ti |          -          |
 |        Epochs         |          160          |          -          |
 |    Mini Batch Size    |          50           |          -          |
