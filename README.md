@@ -67,7 +67,7 @@ The runtime environment is shown in the following table:
 
 ## More
 
-In addition,[FocalLoss](<https://arxiv.org/abs/1708.02002> ) also with default setting is operated before data augumentation to fix class imbalance.It is a pity that there is no distinct improvement.Another training trick called [Cycle Learning Rate](https://arxiv.org/pdf/1506.01186.pdf)  is a kind of adjusting learning rate .Maybe it works for this project.
+In addition,[FocalLoss](https://arxiv.org/abs/1708.02002 ) also with default setting is operated before data augumentation to fix class imbalance.It is a pity that there is no distinct improvement.Another training trick called [Cycle Learning Rate](https://arxiv.org/pdf/1506.01186.pdf)  is a kind of adjusting learning rate .Maybe it works for this project.
 
 Before using densenet121,I try to train resnet18 but without improvement.One reason I think out may be that resnet18 has more trainable parameters than densenet121,which results in larger diffculty to train resnet18.Rather than data augumentation,fine-tune pretrained model is also a common way to do classification(Pneumonia vs Normal).If you are interesed in this idea,I recommend you to refer to this [repository](https://github.com/arnoweng/CheXNet) that obtained most stars in GitHub about this issise.I will feel great appreciated if you realize outstanding performance and make furture disscussion at your convenience because I get stuck in this aspect.
 
