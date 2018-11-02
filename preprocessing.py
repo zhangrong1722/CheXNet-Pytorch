@@ -2,7 +2,7 @@ import os
 import cv2
 from PIL import Image, ImageEnhance
 
-from utils.transform_ops import img_contrast, img_shift, img_rotation, gaussain_blur, gaussain_noise, avg_blur
+from utils.data_augument import img_contrast, img_shift, img_rotation, gaussain_blur, gaussain_noise, avg_blur
 
 
 _max_filiter_size = 7  # for avg_blur and gaussain_blur
