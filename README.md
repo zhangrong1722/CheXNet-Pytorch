@@ -73,7 +73,7 @@ Before using densenet121,I try to train resnet18 but without improvement.One rea
 
 This experiment result origins from initial parameters setting without much tricks.Furture improvement are probably achieved.
 
-Any question,please contact with me.Email(giovannijeann@outlook.com) and WeChat(zhangrong1728) are available.
+Any question,please contact with me.Email(zr.estelle@gmail.com) and WeChat(zhangrong1728) are available.
 
 
 
